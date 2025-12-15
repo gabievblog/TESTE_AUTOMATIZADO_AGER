@@ -1,0 +1,34 @@
+appId: br.gov.mt.mti.app.fiscalizastcrip
+launchApp:
+  clearState: false
+
+tags:
+  - fiscaliza-inicio
+
+# -- Variaveis tela fiscalizações --
+env:
+  LOCAL_FISCALIZACAO: Teste
+
+---
+- assertVisible: "Selecione o tipo de fiscalização:"
+- tapOn: Transporte Urbano
+- tapOn: Digite o local da fiscalização
+- inputText: ${LOCAL_FISCALIZACAO}
+- doubleTapOn: Fornecer localização
+- assertVisible: "Latitude: 37.421998"
+- tapOn: Data da Fiscalização
+- tapOn: Confirmar
+- tapOn: Hora da Fiscalização
+- tapOn: Confirmar
+- scrollUntilVisible:
+    element:
+      text: Avançar
+- tapOn: Selecione uma empresa
+- tapOn: 27852039000193 - CONSÓRCIO METROPOLITANO DE TRANSPORTES (28 linhas)
+- tapOn: Contém dados de viagem?
+- tapOn: Selecione uma opção
+- tapOn: NÃO
+- tapOn: Contém dados do veículo?
+- tapOn: Selecione uma opção
+- tapOn: SIM
+- tapOn: Avançar

@@ -1,0 +1,51 @@
+#Teste referente a US 199207 - Itens Fiscalizáveis (APP) - Dados do Veículo - Cadastrar
+appId: br.gov.mt.mti.app.fiscalizastcrip
+
+launchApp:
+  clearState: false
+
+tags:
+  - cadastro-veiculos
+
+# -- Variaveis tela Dados do Veículo --
+env:
+  PLACA: DDD-1111
+  QNTDE_POLTRONAS: 5
+  
+---
+
+- startRecording:
+    path: 'CadastroVeiculo'
+    label: 'Teste cadastro de veiculo'
+    optional: true
+
+- assertVisible: "Dados do Veículo"
+- takeScreenshot:
+    path: DadosVeiculo
+
+- tapOn: Selecione o tipo
+- tapOn: Automóvel
+- takeScreenshot:
+    path: TipoVeiculo
+
+- tapOn: Placa do Veículo
+- inputText: ${PLACA}
+- hideKeyboard
+- takeScreenshot:
+    path: PlacaVeiculo
+
+- tapOn: Quantidade de poltronas no veículo
+- inputText: ${QNTDE_POLTRONAS}
+- hideKeyboard
+- takeScreenshot:
+    path: PoltronasVeiculo
+
+- tapOn: Avançar
+- takeScreenshot:
+    path: DadosSalvos
+
+- tapOn: Voltar
+
+- stopRecording
+- stopApp
+

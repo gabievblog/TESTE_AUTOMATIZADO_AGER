@@ -1,0 +1,36 @@
+appId: br.gov.mt.mti.app.fiscalizastcrip
+
+launchApp:
+  clearState: true
+
+tags:
+  - login
+
+# -- Variaveis login --
+env:
+  CPF: 017.607.291-83
+  SENHA: r1234567
+  
+---
+
+# -- Login no App --
+- tapOn: Fiscaliza STCRIP
+- tapOn: "ENTRAR COM "
+- tapOn: ENTRAR COM MT LOGIN
+- tapOn:
+    text: CPF
+    index: 1
+- inputText: ${CPF}
+- hideKeyboard
+- tapOn: Senha
+- inputText: ${SENHA}
+- hideKeyboard
+- tapOn: Manter-me conectado
+- tapOn: ENTRAR
+- extendedWaitUntil:
+    visible: Dados sincronizados 
+    timeout: 50000
+- assertVisible: Dados Sincronizados
+- tapOn:
+    point: 4%,8%
+- tapOn: Fiscalizações
