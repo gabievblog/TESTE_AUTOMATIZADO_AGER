@@ -6,12 +6,7 @@ launchApp:
 
 tags:
   - cadastro-veiculos
-
-# -- Variaveis tela Dados do Veículo --
-env:
-  PLACA: DDD-1111
-  QNTDE_POLTRONAS: 5
-  
+ 
 ---
 
 - startRecording:

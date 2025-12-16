@@ -6,11 +6,6 @@ launchApp:
 tags:
   - login
 
-# -- Variaveis login --
-env:
-  CPF: 017.607.291-83
-  SENHA: r1234567
-  
 ---
 
 # -- Login no App --

@@ -5,10 +5,6 @@ launchApp:
 tags:
   - fiscaliza-inicio
 
-# -- Variaveis tela fiscalizações --
-env:
-  LOCAL_FISCALIZACAO: Teste
-
 ---
 - assertVisible: "Selecione o tipo de fiscalização:"
 - tapOn: Transporte Urbano
