@@ -47,4 +47,4 @@ Caso o arquivo não salve no caminho desejado copie e cole o arquivo dentro da p
 
 Contém as US para fazer os testes app no Maestro para fim de estudo:
 
-https://dev.azure.com/Loglab/FABRICA%20-%20SQUAD%20-%20QA/_queries/edit/287367/?newQuery=true&parentId=94125b3c-aaf6-4dd8-8572-d14fb444a6c7
+https://dev.azure.com/Loglab/MTI%20-%20AGER%20-%20%20STCRIP/_workitems/edit/199184
