@@ -30,7 +30,7 @@ git clone https://github.com/gabievblog/TESTE_AUTOMATIZADO_AGER.git
 No terminal da sua IDE, execute o seguinte comando:
 
 ```
-maestro test teste_fiscalizacoes.yaml --format html ----debug-output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes
+maestro test teste_fiscalizacoes.yaml --format html --debug-output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes
 ```
 
 **Observações**:
@@ -38,7 +38,7 @@ maestro test teste_fiscalizacoes.yaml --format html ----debug-output TESTE_AUTOM
 Caso queira salvar os arquivos de evidências em uma pasta específica, utilize o parâmetro **--output**:
 
 ```
-maestro test teste_fiscalizacoes.yaml --format html ----debug-output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes --output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes\screenshots
+maestro test teste_fiscalizacoes.yaml --format html --debug-output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes --output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes\screenshots
 ```
 
 Caso o arquivo não salve no caminho desejado copie e cole o arquivo dentro da pasta desejada na sua IDE.
