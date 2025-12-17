@@ -21,26 +21,3 @@ env:
     file: C:\maestro\.maestro\TESTE_AUTOMATIZADO_AGER\flows\fiscalizacoes\fiscalizaInicio.yaml
 - runFlow: 
     file: C:\maestro\.maestro\TESTE_AUTOMATIZADO_AGER\flows\fiscalizacoes\cadastroVeiculos.yaml
-appId: br.gov.mt.mti.app.fiscalizastcrip
-
-tags:
-  - test-case
-
-launchApp:
-  clearState: true
-
-# -- Variaveis ambiente --
-env:
-  CPF: 017.607.291-83
-  SENHA: r1234567
-  LOCAL_FISCALIZACAO: Teste
-  PLACA: DDD-1111
-  QNTDE_POLTRONAS: 5
-
----
-- runFlow:
-    file: C:\maestro\.maestro\TESTE_AUTOMATIZADO_AGER\flows\login.yaml
-- runFlow:
-    file: C:\maestro\.maestro\TESTE_AUTOMATIZADO_AGER\flows\fiscalizacoes\fiscalizaInicio.yaml
-- runFlow: 
-    file: C:\maestro\.maestro\TESTE_AUTOMATIZADO_AGER\flows\fiscalizacoes\cadastroVeiculos.yaml
