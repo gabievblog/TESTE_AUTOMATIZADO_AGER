@@ -41,4 +41,10 @@ Caso queira salvar os arquivos de evidências em uma pasta específica, utilize 
 maestro test teste_fiscalizacoes.yaml --format html ----debug-output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes --output TESTE_AUTOMATIZADO_AGER\reports\fiscalizacoes\screenshots
 ```
 
-Caso o arquivo não salve no caminho desejado copie e cole o arquivo dentro da pasta desejada no VS Code
+Caso o arquivo não salve no caminho desejado copie e cole o arquivo dentro da pasta desejada na sua IDE.
+
+## Feature Fiscaliza Stcrip
+
+Contém as US para fazer os testes app no Maestro para fim de estudo:
+
+https://dev.azure.com/Loglab/MTI%20-%20AGER%20-%20%20STCRIP/_workitems/edit/199184
